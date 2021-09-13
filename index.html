@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>PC Gopher</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <style>
+    #search {
+      width: 70vw;
+      border-radius: 10px;
+      border: black solid 3px;
+      vertical-align: middle;
+    }
+
+    body {
+      height: 100vh;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+      </a>
+    </div>
+
+  </nav>
+  <br><br><br><br>
+  <article>
+    <div class="container">
+      <div class="container-fluid">
+        <img src="./Gopher-.png" width="200px">
+        <h1>
+          PC PARTS UNITED
+        </h1>
+        <input type="text" id="txtSearch" class="form-control" placeholder="Search"></input>
+      </div>
+      <div style="text-align: left; width: 100%;">
+        <br>
+        <h5>Hot Deals from around the web</h5>
+        <br>
+        <div style="vertical-align: top; display: inline-block; width:250px; height:270px; border: 2px solid lightgray; padding: 5px; border-radius: 3px; text-align: center;" width=100px>
+         <img class="img-fluid" src="https://c1.neweggimages.com/ProductImage/14-137-650-V01.jpg"
+                        width="150px">
+          <p>MSI Gaming GeForce RTX 3080 Ti 12GB GDDR6X PCI Express 4.0 Video Card RTX 3080 Ti Gaming X Trio
+            12G
+          </p>
+          <strong style=" float: right; color:green">AUD$3,210.90</Strong>
+        </div>
+        <div style="vertical-align: top; display: inline-block; width:250px; height:270px; border: 2px solid lightgray; padding: 5px; border-radius: 3px; text-align: center;" width=100px>
+          <img class="img-fluid" src="https://m.media-amazon.com/images/I/71Kkm5nIRKL._AC_SL1500_.jpg"
+                        width="150px">
+          <p>Corsair CMW16GX4M2C3200C16 Vengeance RGB PRO 16GB (2x8GB) DDR4 3200MHz C16 Desktop Gaming Memory, RGB PRO- Black 
+          </p>
+          <strong style=" float: right; color:green">AUD$139.00</Strong>
+        </div>
+        <div style="vertical-align: top; display: inline-block; width:250px; height:270px; border: 2px solid lightgray; padding: 5px; border-radius: 3px; text-align: center;" width=100px>
+          <img class="img-fluid" src="https://c1.neweggimages.com/ProductImage/14-137-650-V01.jpg"
+                        width="150px">
+          <p>MSI Gaming GeForce RTX 3080 Ti 12GB GDDR6X PCI Express 4.0 Video Card RTX 3080 Ti Gaming X Trio
+            12G
+          </p>
+          <strong style=" float: right; color:green">AUD$3,210.90</Strong>
+        </div>
+        <div style="display: inline-block; width:250px; height:270px; border: 2px solid lightgray; padding: 5px; border-radius: 3px; text-align: center;" width=100px>
+          <img class="img-fluid" src="https://m.media-amazon.com/images/I/71vXweqjv+L._AC_SL1500_.jpg"
+                        width="150px">
+                        <br>
+          <p>Corsair CP-9020179-AU RMX Series. RM750x 80 Plus Gold Fully Modular ATX Power Supply, Black, 750W
+          </p>
+          <strong style=" float: right; color:green">AUD$169.00</Strong>
+        </div>
+        <div style="vertical-align: top; display: inline-block; width:250px; height:270px; border: 2px solid lightgray; padding: 5px; border-radius: 3px; text-align: center;" width=100px>
+          <img class="img-fluid" src="https://images-na.ssl-images-amazon.com/images/I/51C3vYhP0KS.__AC_SX300_SY300_QL70_ML2_.jpg"
+                        width="100px">
+                        <br>
+          <p>
+            WD Blue 1TB PC Desktop Hard Drive, WD10EZEX 
+          </p>
+          <strong style=" float: right; color:green">AUD$58.90 </Strong>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    </div>
+  </article>
+  <script>
+    document.querySelector('#txtSearch').addEventListener('keypress', function (e) {
+      if (e.key === 'Enter') {
+        window.location.href = '/search.html'
+      }
+    });
+  </script>
+</body>
+
+</html>
