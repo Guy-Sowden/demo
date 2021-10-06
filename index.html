@@ -92,7 +92,7 @@
   <script>
     document.querySelector('#txtSearch').addEventListener('keypress', function (e) {
       if (e.key === 'Enter') {
-        let searchterm =  document.querySelector('#txtSearch').innerHTML;
+        let searchterm =  document.querySelector('#txtSearch').value;
         if(searchterm  == "RTX 3080"){
           window.location.href = '/demo/search.html'
         }
