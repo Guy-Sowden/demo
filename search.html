@@ -14,17 +14,17 @@
 <body>
         <nav class="navbar navbar-light bg-light">
             <div class="container">
-                <a class="navbar-brand" href="/">
+                <a class="navbar-brand" href="/demo">
                     <img src="./Gopher-.png" height="37" class="d-inline-block align-top" alt="">
                     PC PARTS UNITED
                 </a>
                 <input type="text" style="max-width: 75%; border-radius:9px" class="form-control" placeholder="Search"
-                    value="Power Supply"></input>
+                    value="RTX 3080"></input>
                 <ul class="navbar-nav">
                     <li class="nav-item dropdown" id="dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">
-                            <img src="./index.svg" height="30px"><img><strong id="numberofproductonpartslist">1</strong>
+                            <img src="./index.svg" height="30px"><img><strong id="numberofproductonpartslist">0</strong>
                             &nbsp&nbsp</a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                             <a class="dropdown-item" href="#">Action</a>
@@ -95,6 +95,26 @@
             <hr>
             <div class="row">
                 <div class="col-lg-2">
+                    <img class="img-fluid" src="https://m.media-amazon.com/images/I/81ykSv-391L._AC_SX679_.jpg"
+                        width="150px">
+                </div>
+                <div class="col-lg-10">
+                    <a href="#">
+                    <h5>MSI Gaming GeForce RTX 3080 10GB GDRR6X 320-Bit HDMI/DP Nvlink Torx Fan 3 Ampere Architecture OC Graphics Card (RTX 3080 VENTUS 3X 10G OC)
+                    </h5></a>
+                    <img src="./logos/Amazon_logo.svg" style="height: 25px;">
+                    <p>Free shipping with Amazon Prime</p>
+                    <h3 style=" float: right; color:green">AUD$2,999.00</h3>
+                    <br>
+                    <button class="btn btn-primary" id="realDemoButton" onclick="compadible()"> + Add to
+                        parts list</button><br>
+                        <a href="#" id="priceHistory">&#9660; View Price History</a>
+                        <img id="History"  style="display: none; width:30vw" src="./camelchart-locale-auasin-b08hm4m621pricetypes-newforce-1zero-0w-855h-513desired-falselegend-1ilt-1tp-allfo-0lang-en2021-10-0703 09 29.png"></img>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-lg-2">
                     <img class="img-fluid" src="https://c1.neweggimages.com/ProductImage/14-137-650-V01.jpg"
                         width="150px">
                 </div>
@@ -106,6 +126,11 @@
                     <img src="./logos/newegg.png" style="height: 25px;">
                     <p>Ships from China. Most customers receive within 4-17 days.</p>
                     <h3 style=" float: right; color:green">AUD$3,210.90</h3>
+                    <br>
+                    <button class="btn btn-primary" id="realDemoButton" onclick="compadible()"> + Add to
+                        parts list</button><br>
+                        <a href="#" >&#9660; View Price History</a>
+                        <img style="display: none; width:30vw" src="./camelchart-locale-auasin-b08hm4m621pricetypes-newforce-1zero-0w-855h-513desired-falselegend-1ilt-1tp-allfo-0lang-en2021-10-0703 09 29.png"></img>
                 </div>
             </div>
             <hr>
@@ -124,6 +149,10 @@
                     <img src="./logos/Aliexpress_logo.svg" style="height: 25px;">
                     <p>Shipping: AU $85.64 Estimated Delivery on Sep 21 </p>
                     <h3 style=" float: right; color:green">AUD$2,651.09</h3>
+                    <button class="btn btn-primary" id="realDemoButton" onclick="notCompadible()"> + Add to
+                        parts list</button><br>
+                        <a href="#">&#9660; View Price History</a>
+                        <img style="display: none; width:30vw" src="./camelchart-locale-auasin-b08hm4m621pricetypes-newforce-1zero-0w-855h-513desired-falselegend-1ilt-1tp-allfo-0lang-en2021-10-0703 09 29.png"></img>
                 </div>
             </div>
             <hr>
@@ -137,6 +166,10 @@
                     <img src="./logos/logo-pc-case-gear.svg" style="height: 25px;">
                     <h3 style=" float: right; color:green">AUD$2,399.00</h3>
                     <p>No shipping info available.</p>
+                    <button class="btn btn-primary" id="realDemoButton" onclick="notCompadible()"> + Add to
+                        parts list</button><br>
+                        <a href="#">&#9660; View Price History</a>
+                        <img style="display: none; width:30vw" src="./camelchart-locale-auasin-b08hm4m621pricetypes-newforce-1zero-0w-855h-513desired-falselegend-1ilt-1tp-allfo-0lang-en2021-10-0703 09 29.png"></img>
                 </div>
             </div>
             <hr>
@@ -150,6 +183,10 @@
                     <h5>Gigabyte AORUS GeForce RTX 3080 Ti XTREME WATERFORCE 12G Graphics Card</h5></a>
                     <img src="./logos/cc-logo.svg" style="height: 25px;">
                     <h3 style=" float: right; color:green">AUD$3,299.00</h3>
+                    <button class="btn btn-primary" id="realDemoButton" onclick="notCompadible()"> + Add to
+                        parts list</button><br>
+                        <a href="#" id="priceHistory">&#9660; View Price History</a>
+                        <img style="display: none; width:30vw" src="./camelchart-locale-auasin-b08hm4m621pricetypes-newforce-1zero-0w-855h-513desired-falselegend-1ilt-1tp-allfo-0lang-en2021-10-0703 09 29.png"></img>
                 </div>
             </div>
             <br>
@@ -171,10 +208,27 @@
                     </ul>
                 </nav>
             </center>
+
+            <br>
+            * Some the links to product provided in search results are affiliate links. Pc part united will be paid a commission if you use this link to make a purchase. wether or not affliate commission are made has no effect on search results.
         </div>
     </div>
     </div>
     </div>
 </body>
+<footer>
+    <script>
+        function compadible() {
+            alert("Product secuful added to parts list")
+            document.getElementById("realDemoButton").classList.add("btn-success")
+            document.getElementById("realDemoButton").innerHTML = " - Remove from parts list"
+            var i = Number(document.getElementById("numberofproductonpartslist").innerHTML)
+            document.getElementById("numberofproductonpartslist").innerHTML = i + 1;
+        }
+        document.getElementById("priceHistory").addEventListener("click", () => {
+            document.getElementById("History").style.display="block"
+        });
 
+    </script>
+</footer>
 </html>
