@@ -241,14 +241,14 @@
 <footer>
     <script>
         function compadible() {
-            alert("Product secuful added to parts list")
+            alert("Component successfully added to parts list.")
             document.getElementById("realDemoButton").classList.add("btn-success")
             document.getElementById("realDemoButton").innerHTML = " - Remove from parts list"
             var i = Number(document.getElementById("numberofproductonpartslist").innerHTML)
             document.getElementById("numberofproductonpartslist").innerHTML = i + 1;
         }
         function notCompadible() {
-            if (confirm("This product is incompadible with your graphics card do you wish to proceed")) {
+            if (confirm("This product is incompatible with your graphics card, do you wish to proceed.")) {
                 document.getElementById("realDemoButton").classList.add("btn-success")
                 document.getElementById("realDemoButton").innerHTML = " - Remove from list"
                 var i = Number(document.getElementById("numberofproductonpartslist").innerHTML)
